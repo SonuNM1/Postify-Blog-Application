@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import CallToAction from '../components/CallToAction';
+import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
 
@@ -17,10 +17,26 @@ export default function Home() {
   return (
     <div>
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to my Blog</h1>
+      <h1 className='text-3xl font-bold lg:text-6xl'>
+      Welcome to my{' '}
+      <TypeAnimation
+        sequence={[
+          'Digital Space', // First phrase
+          1000, // 1 second delay before switching
+          'Exploration Zone', // Second phrase
+          1000,
+          'Tech Talks', // Third phrase
+          1000,
+          'Learning Center', // Fourth phrase
+          1000,
+        ]}
+        wrapper="span"
+        speed={50}
+        repeat={Infinity} // This will make the animation repeat forever
+      />
+    </h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          Here you'll find a variety of articles and tutorials on topics such as
-          web development, software engineering, and programming languages.
+        Your go-to space for articles across multiple topics, from tech and business to lifestyle and environment. Find everything you love here!
         </p>
         <Link
           to='/search'
@@ -29,11 +45,8 @@ export default function Home() {
           View all posts
         </Link>
       </div>
-      <div className='p-3 bg-amber-100 dark:bg-slate-700'>
-        <CallToAction />
-      </div>
-
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+     
+      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 '>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
             <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>

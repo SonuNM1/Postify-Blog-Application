@@ -1,31 +1,36 @@
 export default function About() {
   return (
-    <div className='min-h-screen flex items-center justify-center'>
-      <div className='max-w-2xl mx-auto p-3 text-center'>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="max-w-2xl mx-auto p-3 text-center">
         <div>
-          <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Sahand' Blog
+          <h1 className="text-3xl font font-semibold text-center my-7">
+            About Postify
           </h1>
-          <div className='text-md text-gray-500 flex flex-col gap-6'>
+          <div className="text-md text-gray-500 flex flex-col gap-6">
             <p>
-              Welcome to Sahand's Blog! This blog was created by Sahand Ghavidel
-              as a personal project to share his thoughts and ideas with the
-              world. Sahand is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+              Welcome to my Blog! Myself Sonu N. Mahto. This blog was created as
+              a personal project to share thoughts, ideas, and experiences with
+              the world. I have recently completed my Master's in Computer
+              Applications (MCA) and have learned various programming languages
+              such as JavaScript and Java. With a passion for both frontend and
+              backend development, I am currently looking for job
+              opportunities in the IT industry as a fresher.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Sahand is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+              On this blog, you'll find articles on a variety of topics
+              including technology, web development, education, environment, and
+              much more. Sonu is committed to consistent coding, always learning
+              new skills, and exploring different technologies. The blog serves
+              as a platform to share knowledge, insights, and personal growth in
+              the world of IT.
             </p>
 
             <p>
               We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
+              other readers. Feel free to like and reply to comments. Our goal
+              is to build a community where learners can support each other,
+              share knowledge, and grow together.
             </p>
           </div>
         </div>
