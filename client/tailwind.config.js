@@ -1,12 +1,11 @@
-import { defineConfig } from 'tailwindcss';
-
-export default defineConfig({
+// tailwind.config.js
+module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
   plugins: [
     require('flowbite/plugin'),
-    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('tailwind-scrollbar'),
   ],
-});
+};
