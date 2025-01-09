@@ -1,6 +1,4 @@
 import { defineConfig } from 'tailwindcss';
-import flowbitePlugin from 'flowbite/plugin';
-import scrollbarPlugin from 'tailwind-scrollbar';
 
 export default defineConfig({
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
@@ -8,7 +6,7 @@ export default defineConfig({
     extend: {},
   },
   plugins: [
-    flowbitePlugin,
-    scrollbarPlugin,
+    require('flowbite/plugin'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
   ],
 });
